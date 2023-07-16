@@ -10,6 +10,24 @@ updates:
     open-pull-requests-limit: 20
 
   - package-ecosystem: 'npm'
+    directory: '/apps/api'
+    schedule:
+      interval: 'daily'
+    target-branch: 'development'
+    labels:
+      - 'dependencies'
+    open-pull-requests-limit: 20
+
+  - package-ecosystem: 'npm'
+    directory: '/apps/bot'
+    schedule:
+      interval: 'daily'
+    target-branch: 'development'
+    labels:
+      - 'dependencies'
+    open-pull-requests-limit: 20
+
+  - package-ecosystem: 'npm'
     directory: '/apps/web'
     schedule:
       interval: 'daily'
@@ -29,6 +47,15 @@ updates:
 
   - package-ecosystem: 'npm'
     directory: '/packages/ui'
+    schedule:
+      interval: 'daily'
+    target-branch: 'development'
+    labels:
+      - 'dependencies'
+    open-pull-requests-limit: 20
+
+  - package-ecosystem: 'npm'
+    directory: '/packages/types'
     schedule:
       interval: 'daily'
     target-branch: 'development'
